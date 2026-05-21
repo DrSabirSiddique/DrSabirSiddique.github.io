@@ -1,0 +1,35 @@
+QUICK EDIT GUIDE — Dr. Sabir Ali Siddique Academic Website
+
+1) Uploading to GitHub Pages
+   - Unzip the package.
+   - Open the folder.
+   - Upload index.html, 404.html, site.webmanifest, README.md, quick_edit_guide.txt and the assets folder to your GitHub repository root.
+   - Repository name for personal website: DrSabirSiddique.github.io
+
+2) Replacing the profile initials with a photo
+   - Put your photo as: assets/images/profile.jpg
+   - In index.html, find: <div class="profile-avatar" aria-hidden="true">SS</div>
+   - Replace it with: <img class="profile-photo" src="assets/images/profile.jpg" alt="Dr. Sabir Ali Siddique">
+   - Add this to CSS if needed:
+     .profile-photo { width:120px; height:120px; object-fit:cover; border-radius:34px; border:1px solid var(--line-strong); }
+
+3) Updating publications
+   - Find the Publications section in index.html.
+   - Copy an existing <li class="pub-item" ...> block.
+   - Change data-year, data-tags, authors, title, journal and DOI.
+   - Keep tags such as: first, corr, td.
+
+4) Updating CV or publication PDF
+   - Replace these files while keeping filenames identical:
+     assets/docs/Siddique_Sabir_Ali_CV.pdf
+     assets/docs/Sabir_Ali_Siddique_Publications.pdf
+
+5) Main color theme
+   - Open assets/css/styles.css.
+   - Edit variables under :root.
+   - Current design uses deep professional navy/blue/cyan, not yellowish.
+
+6) Useful shortcuts on the website
+   - Ctrl/Command + K opens quick navigation.
+   - Use the Publications search box to filter papers.
+   - Use the theme toggle button to switch light/dark mode.
